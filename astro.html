@@ -1,0 +1,95 @@
+<html>
+    <head>
+        <meta name="viewport" content="with=device-width, initial-scale=1.0">
+        <title>Astronomy</title>
+        <link rel="stylesheet" href="astr_style.css">
+    </head>
+
+    <body>
+        <nav>
+            <div class="nav-links">
+                <ul>
+                    <li><a href="vsa.html">VSA</a></li>
+                    <!-- <li><a href="zr.html">ZR/ILC</a></li> -->
+                    <li><a href="astro.html">Astronomy</a></li>
+                    <li><a href="photo.html">Photography</a></li>
+                    <!-- <li><a href="#digital">Digital Design</a></li> -->
+                    <!-- <li style="float:right"><a class="active" href="#about">About Me</a></li> -->
+                    <li class="dropdown" style="float:left">
+                        <a href="index.html" class="dropbtn" style="right: auto;">About Me</a>
+                        <div class="dropdown-content">
+                          <a href="media.html">Media</a>
+                          <a href="from.html">Where am I from?</a>
+                          <a href="inspire.html">What Inspires me</a>
+                          
+                          <!-- <a href="what.html">Fun Facts</a> -->
+                        </div>
+                      </li>
+                </ul>
+                
+            </div>
+        </nav>
+
+        <div class="header" id="myHeader">
+            <h1 style="font-size:40px">Astronomy Club</h1>
+            <h3 style="font-size:25px">I am the Public Relations of Georgia Tech's Astronomy Club.</h3>
+            <h3 style="font-size:25px">I am in charge of running our social medias and outreach. Our socials include twitter, instagram, facebook and LinkedIn. This includes making posters, banners, instragram posts, and taking pictures.</h3>
+            <br>
+            <h3 style="font-size:25px">In astronomy club, we go to the obeservatory and use telescopes to view stars, planets, and other astrological bodies. Every first Thursday of the month, we host a public night where we set up telescopes for anyone in the community to view. My favorite part of being in this club is viewing the constellations in the Springtime.</h3>
+ 
+        </div>
+        <br> <br> <br> <br>
+        <div class="row"> 
+            <div class="column">
+                <img src="photo/astronomy/Screen Shot 2022-09-14 at 4.12.27 PM.png" style="width:100%">
+                <img src="photo/astronomy/1.png" style="width:100%">
+                <img src="photo/astronomy/Screen Shot 2022-09-14 at 4.12.33 PM.png" style="width:100%">
+                <img src="photo/astronomy/Screen Shot 2022-09-14 at 4.12.46 PM.png" style="width:100%">
+                
+                <img src="photo/astronomy/Screen Shot 2022-09-14 at 4.12.55 PM.png" style="width:100%">
+                <img src="photo/astronomy/Screen Shot 2022-09-14 at 4.13.05 PM.png" style="width:100%">
+                <img src="photo/astronomy/2.png" style="width:100%">
+
+            </div>
+
+            <div class="column">
+                <img src="photo/astronomy/Screen Shot 2022-09-14 at 4.13.18 PM.png" style="width:100%">
+                <img src="photo/astronomy/Screen Shot 2022-09-14 at 4.13.25 PM.png" style="width:100%">
+                <img src="photo/astronomy/3.png" style="width:100%">
+                <img src="photo/astronomy/Screen Shot 2022-09-14 at 4.13.34 PM.png" style="width:100%">
+                <img src="photo/astronomy/Screen Shot 2022-09-14 at 4.13.44 PM.png" style="width:100%">
+                <!-- <img src="photo/astronomy/Screen Shot 2022-09-14 at 4.12.27 PM.png" style="width:100%"> -->
+                <img src="photo/astronomy/Our first public night September 8th 9-11pm courtyard in front of Howey We will be viewing the Moon, Saturn, Albireo, and more! (1).png" style="width:100%">
+            </div> 
+            
+        </div>
+
+        <script>
+            var elements = document.getElementsByClassName("column");
+            var i;
+          
+            
+            // Two images side by side
+            function two() {
+                for (i = 0; i < elements.length; i++) {
+                elements[i].style.msFlex = "50%";
+                elements[i].style.flex = "50%";
+                }
+            }
+
+            
+            // Add active class to the current button (highlight it)
+            var header = document.getElementById("myHeader");
+            var btns = header.getElementsByClassName("btn");
+            for (var i = 0; i < btns.length; i++) {
+                btns[i].addEventListener("click", function() {
+                var current = document.getElementsByClassName("active");
+                current[0].className = current[0].className.replace(" active", "");
+                this.className += " active";
+                });
+            }
+            </script>
+           
+    </body>
+
+</html>
